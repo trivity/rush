@@ -187,6 +187,16 @@ section{padding:4.5rem 5vw}
 h2.display{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:.8rem}
 .section-sub{color:var(--ink-soft);max-width:40rem;margin-bottom:2.4rem;font-size:1.05rem}
 
+/* featured offer */
+.offer-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.8rem;align-items:center}
+.offer-img img{border-radius:22px;box-shadow:var(--shadow-lg);width:100%}
+.offer-list{list-style:none;margin:0 0 1.2rem;padding:0}
+.offer-list li{font-weight:600;color:var(--ink-soft);margin-bottom:.45rem}
+.offer-price{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.4rem}
+.offer-price .was{font-size:1.05rem;font-weight:700;color:var(--ink-soft);text-decoration:line-through}
+.offer-price .now{font-family:'Anton',Impact,sans-serif;font-size:3rem;color:var(--heat);line-height:1}
+@media (max-width:960px){.offer-grid{grid-template-columns:1fr}.offer-img{max-width:480px;margin:0 auto}}
+
 /* services */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .svc{
@@ -434,6 +444,33 @@ footer li{list-style:none;margin-bottom:.45rem}
     <span>📍 Chandler • Gilbert • Mesa • Queen Creek & Beyond</span>
   </div>
 </div>
+
+<!-- FEATURED OFFER -->
+<section id="offer" style="padding-bottom:3.5rem">
+  <div class="wrap offer-grid">
+    <div class="offer-img reveal">
+      <img src="/deep-condenser-clean.jpg" alt="Deep Condenser Clean before and after, now only $125, normally $250" loading="lazy">
+    </div>
+    <div class="offer-copy">
+      <div class="kicker reveal">Limited-Time Offer</div>
+      <h2 class="display reveal">Deep Condenser Clean <span style="color:var(--heat)">— 50% Off</span></h2>
+      <p class="reveal d1" style="color:var(--ink-soft);margin-bottom:1.2rem">Rush's signature service. We deep clean your condenser coils and unit exterior, removing the dust, debris, and airflow-blocking buildup that overworks your system.</p>
+      <ul class="offer-list reveal d2">
+        <li>✓ Deep clean of condenser coils and unit exterior</li>
+        <li>✓ Remove dust, debris, and airflow-blocking buildup</li>
+        <li>✓ Lower energy bills and faster cooling</li>
+      </ul>
+      <div class="offer-price reveal d2">
+        <span class="was">Normally $250</span>
+        <span class="now">$125</span>
+      </div>
+      <div class="cta-row reveal d3">
+        <a class="btn btn-heat" href="https://api.leadconnectorhq.com/widget/bookings/rush-hvac-request-book">Claim 50% Off →</a>
+        <a class="btn btn-ghost" href="tel:+16023706847">📞 (602) 370-6847</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- SERVICES -->
 <section id="services">
