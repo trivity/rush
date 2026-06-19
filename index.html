@@ -3,6 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1815728026502947');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1815728026502947&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <title>Same-Day A/C Repair in Chandler & East Valley | Rush HVAC Services</title>
 <meta name="description" content="Same-day AC repair and installation in Chandler, AZ and the East Valley. Licensed, bonded, and insured. Emergency service 24/7. Call (602) 370-6847 or book online.">
 <meta property="og:title" content="Same-Day A/C Repair in Chandler & East Valley | Rush HVAC Services">
@@ -694,7 +711,21 @@ footer li{list-style:none;margin-bottom:.45rem}
 </div>
 
 <script>
-// Temperature gauge: 108° heat down to 72° relief
+// Meta Pixel: track CTA clicks as Lead events for ad optimization
+(function(){
+  if(typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    if(href.indexOf('leadconnectorhq.com/widget/bookings') !== -1){
+      fbq('track', 'Lead', {content_name: 'Booking CTA'});
+    } else if(href.indexOf('tel:') === 0){
+      fbq('track', 'Contact', {content_name: 'Phone Call'});
+    }
+  });
+})();
+
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var el = document.getElementById('temp');
