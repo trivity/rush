@@ -434,7 +434,7 @@ footer li{list-style:none;margin-bottom:.45rem}
       <h1 class="display reveal d1">Same-Day A/C Repair <span class="hot">When the Arizona Heat Won't Wait</span></h1>
       <p class="sub reveal d2">Reliable repairs, <strong>fast installs</strong>, and <strong>emergency help 24/7</strong>. Licensed pros who show up on time, fix it right, and never upsell you.</p>
       <div class="cta-row reveal d3">
-        <a class="btn btn-heat" href="https://api.leadconnectorhq.com/widget/bookings/rush-hvac-request-book">Book Service Today →</a>
+        <a class="btn btn-heat" href="#contact">Book Service Today →</a>
         <a class="btn btn-ghost" href="tel:+16023706847">📞 (602) 370-6847</a>
       </div>
       <div class="trust-chips reveal d3">
@@ -482,7 +482,7 @@ footer li{list-style:none;margin-bottom:.45rem}
         <span class="now">$125</span>
       </div>
       <div class="cta-row reveal d3">
-        <a class="btn btn-heat" href="https://api.leadconnectorhq.com/widget/bookings/rush-hvac-request-book">Claim 50% Off →</a>
+        <a class="btn btn-heat" href="#contact">Claim 50% Off →</a>
         <a class="btn btn-ghost" href="tel:+16023706847">📞 (602) 370-6847</a>
       </div>
     </div>
@@ -718,7 +718,7 @@ footer li{list-style:none;margin-bottom:.45rem}
     var a = e.target.closest('a');
     if(!a) return;
     var href = a.getAttribute('href') || '';
-    if(href.indexOf('leadconnectorhq.com/widget/bookings') !== -1){
+    if(href.indexOf('leadconnectorhq.com/widget/bookings') !== -1 || href.indexOf('#contact') !== -1){
       fbq('track', 'Lead', {content_name: 'Booking CTA'});
     } else if(href.indexOf('tel:') === 0){
       fbq('track', 'Contact', {content_name: 'Phone Call'});
