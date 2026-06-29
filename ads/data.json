@@ -1,0 +1,64 @@
+{
+  "updated": "2026-06-28T20:45:00Z",
+  "currency": "USD",
+  "account_id": "870041577419265",
+  "window": "May 29 – Jun 27, 2026",
+  "summary": {
+    "spend": 165.78,
+    "impressions": 64447,
+    "reach": 32073,
+    "clicks": 476,
+    "link_clicks": 471,
+    "cpc": 0.35,
+    "cpm": 2.57,
+    "ctr": 0.74,
+    "frequency": 2.01
+  },
+  "campaigns": [
+    {
+      "name": "Deep Condenser Clean $125 — East Valley",
+      "objective": "Traffic",
+      "status": "ACTIVE",
+      "delivery": "Active",
+      "daily_budget": 15.00,
+      "spend": 165.78,
+      "impressions": 64447,
+      "reach": 32073,
+      "clicks": 476,
+      "cpc": 0.35,
+      "ctr": 0.74,
+      "results": 471,
+      "result_label": "Link clicks",
+      "cost_per_result": 0.35
+    },
+    {
+      "name": "Deep Condenser Clean $125 — Lead Form",
+      "objective": "Leads",
+      "status": "ACTIVE",
+      "delivery": "Active",
+      "daily_budget": 35.00,
+      "spend": 0.00,
+      "impressions": 0,
+      "reach": 0,
+      "clicks": 0,
+      "cpc": 0.00,
+      "ctr": 0.00,
+      "results": 0,
+      "result_label": "Leads",
+      "cost_per_result": 0.00
+    }
+  ],
+  "daily": [
+    { "date": "2026-06-18", "spend": 10.78, "clicks": 39, "impressions": 12075 },
+    { "date": "2026-06-19", "spend": 24.36, "clicks": 77, "impressions": 17106 },
+    { "date": "2026-06-20", "spend": 25.78, "clicks": 53, "impressions": 4099 },
+    { "date": "2026-06-21", "spend": 16.85, "clicks": 40, "impressions": 3243 },
+    { "date": "2026-06-22", "spend": 17.63, "clicks": 51, "impressions": 5127 },
+    { "date": "2026-06-23", "spend": 14.06, "clicks": 35, "impressions": 4016 },
+    { "date": "2026-06-24", "spend": 13.76, "clicks": 29, "impressions": 9899 },
+    { "date": "2026-06-25", "spend": 13.95, "clicks": 62, "impressions": 2356 },
+    { "date": "2026-06-26", "spend": 15.12, "clicks": 38, "impressions": 3365 },
+    { "date": "2026-06-27", "spend": 13.49, "clicks": 52, "impressions": 3161 }
+  ],
+  "seeded": false
+}

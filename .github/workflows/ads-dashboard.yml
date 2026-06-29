@@ -1,0 +1,124 @@
+name: Update Ads Dashboard
+
+# Pulls fresh numbers from the Meta Ads API once a day and commits ads/data.json.
+# The commit triggers Vercel's auto-deploy, so /ads always shows current data.
+# You can also run it on demand from the Actions tab (workflow_dispatch).
+
+on:
+  schedule:
+    - cron: '0 * * * *'     # top of every hour (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write            # lets the built-in token commit the updated data file
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Meta insights and build data.json
+        env:
+          META_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          ACCOUNT_ID: ${{ vars.META_AD_ACCOUNT_ID || '870041577419265' }}
+          API_VERSION: v21.0           # bump if Meta returns a version-deprecation error
+        run: |
+          set -euo pipefail
+          base="https://graph.facebook.com/${API_VERSION}/act_${ACCOUNT_ID}"
+
+          curl -sG "$base/insights" \
+            --data-urlencode "access_token=$META_TOKEN" \
+            --data-urlencode "level=account" \
+            --data-urlencode "date_preset=maximum" \
+            --data-urlencode "fields=spend,impressions,reach,clicks,cpc,cpm,ctr,frequency,actions,date_start,date_stop" \
+            -o acct.json
+
+          # Stop early if Meta returned an error (bad/expired token, etc.)
+          if grep -q '"error"' acct.json; then echo "Meta API error:"; cat acct.json; exit 1; fi
+
+          curl -sG "$base/campaigns" \
+            --data-urlencode "access_token=$META_TOKEN" \
+            --data-urlencode "fields=name,objective,effective_status,daily_budget" \
+            --data-urlencode "limit=200" \
+            -o camps.json
+
+          curl -sG "$base/insights" \
+            --data-urlencode "access_token=$META_TOKEN" \
+            --data-urlencode "level=campaign" \
+            --data-urlencode "date_preset=maximum" \
+            --data-urlencode "fields=campaign_id,spend,impressions,reach,clicks,cpc,ctr,actions" \
+            --data-urlencode "limit=200" \
+            -o campins.json
+
+          curl -sG "$base/insights" \
+            --data-urlencode "access_token=$META_TOKEN" \
+            --data-urlencode "level=account" \
+            --data-urlencode "time_increment=1" \
+            --data-urlencode "date_preset=last_30d" \
+            --data-urlencode "fields=spend,clicks,impressions" \
+            -o daily.json
+
+          mkdir -p ads
+          jq -n \
+            --slurpfile acct acct.json \
+            --slurpfile camps camps.json \
+            --slurpfile campins campins.json \
+            --slurpfile daily daily.json \
+            --arg account "$ACCOUNT_ID" \
+            --arg updated "$(date -u +%FT%TZ)" '
+            def num(x): (x // 0) | (tonumber? // 0);
+            def lc(a): ((a // []) | map(select(.action_type=="link_click") | (.value|tonumber)) | add) // 0;
+            def ld(a): ((a // []) | map(select(.action_type=="lead") | (.value|tonumber)) | add) // 0;
+            def objname(o): if o=="OUTCOME_TRAFFIC" then "Traffic"
+                            elif o=="OUTCOME_LEADS" then "Leads"
+                            elif o=="OUTCOME_ENGAGEMENT" then "Engagement"
+                            else (o // "Campaign") end;
+            ($acct[0].data[0] // {}) as $a
+            | ($campins[0].data // []) as $ci
+            | {
+                updated: $updated,
+                currency: "USD",
+                account_id: $account,
+                window: (($a.date_start // "") + " – " + ($a.date_stop // "")),
+                summary: {
+                  spend: num($a.spend), impressions: num($a.impressions), reach: num($a.reach),
+                  clicks: num($a.clicks), link_clicks: lc($a.actions),
+                  cpc: num($a.cpc), cpm: num($a.cpm), ctr: num($a.ctr), frequency: num($a.frequency)
+                },
+                campaigns: ([ $camps[0].data[]?
+                  | select((.name // "") | test("Sound DJ"; "i") | not)
+                  | . as $c
+                  | (($ci[] | select(.campaign_id==$c.id)) // {}) as $m
+                  | (objname($c.objective)) as $obj
+                  | (if $obj=="Leads" then ld($m.actions) else lc($m.actions) end) as $res
+                  | {
+                      name: ($c.name | gsub("Rush HVAC \\| ";"") | gsub(" \\| East Valley";"")),
+                      objective: $obj,
+                      status: ($c.effective_status // "PAUSED"),
+                      delivery: (if ($c.effective_status=="ACTIVE") then "Active"
+                                 elif (($c.effective_status // "")|test("PROCESS|PENDING|REVIEW";"i")) then "In review"
+                                 else "Off" end),
+                      daily_budget: ((num($c.daily_budget))/100),
+                      spend: num($m.spend), impressions: num($m.impressions), reach: num($m.reach),
+                      clicks: num($m.clicks), cpc: num($m.cpc), ctr: num($m.ctr),
+                      results: $res,
+                      result_label: (if $obj=="Leads" then "Leads" else "Link clicks" end),
+                      cost_per_result: (if $res>0 then (num($m.spend)/$res) else 0 end)
+                    } ]),
+                daily: ([ $daily[0].data[]?
+                  | {date: .date_start, spend: num(.spend), clicks: num(.clicks), impressions: num(.impressions)} ])
+              }' > ads/data.json
+
+          echo "Wrote ads/data.json:"; cat ads/data.json
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- ads/data.json; then
+            echo "No data change today — nothing to commit."; exit 0
+          fi
+          git config user.name "rush-ads-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ads/data.json
+          git commit -m "chore(ads): daily data sync $(date -u +%F)"
+          git push
