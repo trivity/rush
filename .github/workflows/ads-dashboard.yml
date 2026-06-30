@@ -30,7 +30,7 @@ jobs:
           curl -sG "$base/insights" \
             --data-urlencode "access_token=$META_TOKEN" \
             --data-urlencode "level=account" \
-            --data-urlencode "date_preset=maximum" \
+            --data-urlencode "date_preset=last_30d" \
             --data-urlencode "fields=spend,impressions,reach,clicks,cpc,cpm,ctr,frequency,actions,date_start,date_stop" \
             -o acct.json
 
@@ -46,7 +46,7 @@ jobs:
           curl -sG "$base/insights" \
             --data-urlencode "access_token=$META_TOKEN" \
             --data-urlencode "level=campaign" \
-            --data-urlencode "date_preset=maximum" \
+            --data-urlencode "date_preset=last_30d" \
             --data-urlencode "fields=campaign_id,spend,impressions,reach,clicks,cpc,ctr,actions" \
             --data-urlencode "limit=200" \
             -o campins.json

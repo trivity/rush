@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-28T20:45:00Z",
+  "updated": "2026-06-30T06:30:00Z",
   "currency": "USD",
   "account_id": "870041577419265",
-  "window": "May 29 – Jun 27, 2026",
+  "window": "May 31 – Jun 29, 2026",
   "summary": {
-    "spend": 165.78,
-    "impressions": 64447,
-    "reach": 32073,
-    "clicks": 476,
-    "link_clicks": 471,
-    "cpc": 0.35,
-    "cpm": 2.57,
-    "ctr": 0.74,
-    "frequency": 2.01
+    "spend": 303.55,
+    "impressions": 94102,
+    "reach": 47776,
+    "clicks": 762,
+    "link_clicks": 776,
+    "cpc": 0.40,
+    "cpm": 3.23,
+    "ctr": 0.81,
+    "frequency": 1.97
   },
   "campaigns": [
     {
@@ -20,16 +20,16 @@
       "objective": "Traffic",
       "status": "ACTIVE",
       "delivery": "Active",
-      "daily_budget": 15.00,
-      "spend": 165.78,
-      "impressions": 64447,
-      "reach": 32073,
-      "clicks": 476,
-      "cpc": 0.35,
-      "ctr": 0.74,
-      "results": 471,
+      "daily_budget": 35.77,
+      "spend": 238.16,
+      "impressions": 89092,
+      "reach": 44629,
+      "clicks": 715,
+      "cpc": 0.33,
+      "ctr": 0.80,
+      "results": 736,
       "result_label": "Link clicks",
-      "cost_per_result": 0.35
+      "cost_per_result": 0.32
     },
     {
       "name": "Deep Condenser Clean $125 — Lead Form",
@@ -37,15 +37,15 @@
       "status": "ACTIVE",
       "delivery": "Active",
       "daily_budget": 35.00,
-      "spend": 0.00,
-      "impressions": 0,
-      "reach": 0,
-      "clicks": 0,
-      "cpc": 0.00,
-      "ctr": 0.00,
-      "results": 0,
+      "spend": 65.39,
+      "impressions": 5010,
+      "reach": 3874,
+      "clicks": 47,
+      "cpc": 1.39,
+      "ctr": 0.94,
+      "results": 4,
       "result_label": "Leads",
-      "cost_per_result": 0.00
+      "cost_per_result": 16.35
     }
   ],
   "daily": [
@@ -58,7 +58,9 @@
     { "date": "2026-06-24", "spend": 13.76, "clicks": 29, "impressions": 9899 },
     { "date": "2026-06-25", "spend": 13.95, "clicks": 62, "impressions": 2356 },
     { "date": "2026-06-26", "spend": 15.12, "clicks": 38, "impressions": 3365 },
-    { "date": "2026-06-27", "spend": 13.49, "clicks": 52, "impressions": 3161 }
+    { "date": "2026-06-27", "spend": 13.49, "clicks": 52, "impressions": 3162 },
+    { "date": "2026-06-28", "spend": 63.36, "clicks": 141, "impressions": 9943 },
+    { "date": "2026-06-29", "spend": 74.41, "clicks": 145, "impressions": 19711 }
   ],
   "seeded": false
 }
