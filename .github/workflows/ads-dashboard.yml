@@ -74,13 +74,14 @@ jobs:
                             elif o=="OUTCOME_LEADS" then "Leads"
                             elif o=="OUTCOME_ENGAGEMENT" then "Engagement"
                             else (o // "Campaign") end;
+            def fmtd(f): if . == null or . == "" then "" else (strptime("%Y-%m-%d") | mktime | strftime(f)) end;
             ($acct[0].data[0] // {}) as $a
             | ($campins[0].data // []) as $ci
             | {
                 updated: $updated,
                 currency: "USD",
                 account_id: $account,
-                window: (($a.date_start // "") + " – " + ($a.date_stop // "")),
+                window: ((($a.date_start // "") | fmtd("%b %-d")) + " – " + (($a.date_stop // "") | fmtd("%b %-d, %Y"))),
                 summary: {
                   spend: num($a.spend), impressions: num($a.impressions), reach: num($a.reach),
                   clicks: num($a.clicks), link_clicks: lc($a.actions),
