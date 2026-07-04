@@ -1,67 +1,143 @@
 {
-  "updated": "2026-07-01T23:30:00Z",
+  "updated": "2026-07-04T08:46:24Z",
   "currency": "USD",
   "account_id": "870041577419265",
-  "window": "Jun 2 – Jul 1, 2026",
+  "window": "2026-06-04 – 2026-07-03",
   "summary": {
-    "spend": 347.72,
-    "impressions": 99696,
-    "reach": 50363,
-    "clicks": 862,
-    "link_clicks": 895,
-    "cpc": 0.40,
-    "cpm": 3.49,
-    "ctr": 0.86,
-    "frequency": 1.98
+    "spend": 530.75,
+    "impressions": 189558,
+    "reach": 66898,
+    "clicks": 1362,
+    "link_clicks": 1429,
+    "cpc": 0.389684,
+    "cpm": 2.799935,
+    "ctr": 0.718514,
+    "frequency": 2.833538
   },
   "campaigns": [
     {
-      "name": "Deep Condenser Clean $125 — East Valley",
+      "name": "Deep Condenser Clean $125 | Lead Form",
+      "objective": "Leads",
+      "status": "ACTIVE",
+      "delivery": "Active",
+      "daily_budget": 35,
+      "spend": 180.38,
+      "impressions": 14988,
+      "reach": 9260,
+      "clicks": 154,
+      "cpc": 1.171299,
+      "ctr": 1.027489,
+      "results": 9,
+      "result_label": "Leads",
+      "cost_per_result": 20.04222222222222
+    },
+    {
+      "name": "Deep Condenser Clean $125",
       "objective": "Traffic",
       "status": "ACTIVE",
       "delivery": "Active",
       "daily_budget": 35.77,
-      "spend": 261.12,
-      "impressions": 93018,
-      "reach": 45785,
-      "clicks": 799,
-      "cpc": 0.33,
-      "ctr": 0.86,
-      "results": 840,
+      "spend": 350.37,
+      "impressions": 174570,
+      "reach": 58756,
+      "clicks": 1208,
+      "cpc": 0.290041,
+      "ctr": 0.691986,
+      "results": 1297,
       "result_label": "Link clicks",
-      "cost_per_result": 0.31
-    },
-    {
-      "name": "Deep Condenser Clean $125 — Lead Form",
-      "objective": "Leads",
-      "status": "ACTIVE",
-      "delivery": "Active",
-      "daily_budget": 35.00,
-      "spend": 86.60,
-      "impressions": 6678,
-      "reach": 4870,
-      "clicks": 63,
-      "cpc": 1.37,
-      "ctr": 0.94,
-      "results": 5,
-      "result_label": "Leads",
-      "cost_per_result": 17.32
+      "cost_per_result": 0.27013878180416345
     }
   ],
   "daily": [
-    { "date": "2026-06-18", "spend": 10.78, "clicks": 39, "impressions": 12075 },
-    { "date": "2026-06-19", "spend": 24.36, "clicks": 77, "impressions": 17106 },
-    { "date": "2026-06-20", "spend": 25.78, "clicks": 53, "impressions": 4099 },
-    { "date": "2026-06-21", "spend": 16.85, "clicks": 40, "impressions": 3243 },
-    { "date": "2026-06-22", "spend": 17.63, "clicks": 51, "impressions": 5127 },
-    { "date": "2026-06-23", "spend": 14.06, "clicks": 35, "impressions": 4016 },
-    { "date": "2026-06-24", "spend": 13.76, "clicks": 29, "impressions": 9899 },
-    { "date": "2026-06-25", "spend": 13.95, "clicks": 62, "impressions": 2356 },
-    { "date": "2026-06-26", "spend": 15.12, "clicks": 38, "impressions": 3365 },
-    { "date": "2026-06-27", "spend": 13.49, "clicks": 52, "impressions": 3162 },
-    { "date": "2026-06-28", "spend": 63.36, "clicks": 141, "impressions": 9943 },
-    { "date": "2026-06-29", "spend": 74.60, "clicks": 146, "impressions": 19721 },
-    { "date": "2026-06-30", "spend": 43.98, "clicks": 99, "impressions": 5584 }
-  ],
-  "seeded": false
+    {
+      "date": "2026-06-18",
+      "spend": 10.78,
+      "clicks": 39,
+      "impressions": 12075
+    },
+    {
+      "date": "2026-06-19",
+      "spend": 24.36,
+      "clicks": 77,
+      "impressions": 17106
+    },
+    {
+      "date": "2026-06-20",
+      "spend": 25.78,
+      "clicks": 53,
+      "impressions": 4099
+    },
+    {
+      "date": "2026-06-21",
+      "spend": 16.85,
+      "clicks": 40,
+      "impressions": 3243
+    },
+    {
+      "date": "2026-06-22",
+      "spend": 17.63,
+      "clicks": 51,
+      "impressions": 5127
+    },
+    {
+      "date": "2026-06-23",
+      "spend": 14.06,
+      "clicks": 35,
+      "impressions": 4016
+    },
+    {
+      "date": "2026-06-24",
+      "spend": 13.76,
+      "clicks": 29,
+      "impressions": 9899
+    },
+    {
+      "date": "2026-06-25",
+      "spend": 13.95,
+      "clicks": 62,
+      "impressions": 2356
+    },
+    {
+      "date": "2026-06-26",
+      "spend": 15.12,
+      "clicks": 38,
+      "impressions": 3365
+    },
+    {
+      "date": "2026-06-27",
+      "spend": 13.49,
+      "clicks": 52,
+      "impressions": 3162
+    },
+    {
+      "date": "2026-06-28",
+      "spend": 63.36,
+      "clicks": 141,
+      "impressions": 9943
+    },
+    {
+      "date": "2026-06-29",
+      "spend": 74.6,
+      "clicks": 146,
+      "impressions": 19721
+    },
+    {
+      "date": "2026-06-30",
+      "spend": 43.98,
+      "clicks": 99,
+      "impressions": 5584
+    },
+    {
+      "date": "2026-07-02",
+      "spend": 68.47,
+      "clicks": 187,
+      "impressions": 45518
+    },
+    {
+      "date": "2026-07-03",
+      "spend": 114.56,
+      "clicks": 313,
+      "impressions": 44344
+    }
+  ]
 }
