@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T06:29:30Z",
+  "updated": "2026-07-05T09:34:28Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "window": "Jun 5 – Jul 4, 2026",
@@ -8,7 +8,7 @@
     "impressions": 210566,
     "reach": 72944,
     "clicks": 1623,
-    "link_clicks": 1736,
+    "link_clicks": 1737,
     "cpc": 0.397985,
     "cpm": 3.067589,
     "ctr": 0.77078,
@@ -36,16 +36,16 @@
       "objective": "Traffic",
       "status": "ACTIVE",
       "delivery": "Active",
-      "daily_budget": 35.77,
+      "daily_budget": 15,
       "spend": 410.57,
       "impressions": 190006,
       "reach": 61544,
       "clicks": 1417,
       "cpc": 0.289746,
       "ctr": 0.745766,
-      "results": 1557,
+      "results": 1558,
       "result_label": "Link clicks",
-      "cost_per_result": 0.2636929993577392
+      "cost_per_result": 0.2635237483953787
     }
   ],
   "daily": [
