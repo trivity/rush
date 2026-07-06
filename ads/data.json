@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-06T11:54:42Z",
+  "updated": "2026-07-06T14:57:38Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "window": "Jun 6 – Jul 5, 2026",
   "summary": {
     "spend": 710.68,
-    "impressions": 223569,
+    "impressions": 223570,
     "reach": 80386,
     "clicks": 1820,
     "link_clicks": 1930,
     "cpc": 0.390484,
-    "cpm": 3.178795,
-    "ctr": 0.814066,
-    "frequency": 2.781193
+    "cpm": 3.178781,
+    "ctr": 0.814063,
+    "frequency": 2.781206
   },
   "campaigns": [
     {
@@ -22,11 +22,11 @@
       "delivery": "Active",
       "daily_budget": 35,
       "spend": 278.57,
-      "impressions": 27517,
+      "impressions": 27518,
       "reach": 15172,
       "clicks": 263,
       "cpc": 1.059202,
-      "ctr": 0.955773,
+      "ctr": 0.955738,
       "results": 14,
       "result_label": "Leads",
       "cost_per_result": 19.89785714285714
@@ -149,7 +149,7 @@
       "date": "2026-07-05",
       "spend": 64.75,
       "clicks": 195,
-      "impressions": 13003
+      "impressions": 13004
     }
   ]
 }
