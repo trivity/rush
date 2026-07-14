@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-14T04:40:35Z",
+  "updated": "2026-07-14T07:03:36Z",
   "currency": "USD",
   "account_id": "870041577419265",
-  "window": "Jun 13 – Jul 12, 2026",
+  "window": "Jun 14 – Jul 13, 2026",
   "summary": {
-    "spend": 908.65,
-    "impressions": 253577,
-    "reach": 94900,
-    "clicks": 2312,
-    "link_clicks": 2409,
-    "cpc": 0.393015,
-    "cpm": 3.58333,
-    "ctr": 0.911755,
-    "frequency": 2.672044
+    "spend": 948.96,
+    "impressions": 257911,
+    "reach": 96617,
+    "clicks": 2383,
+    "link_clicks": 2477,
+    "cpc": 0.398221,
+    "cpm": 3.679409,
+    "ctr": 0.923962,
+    "frequency": 2.669416
   },
   "campaigns": [
     {
@@ -21,15 +21,15 @@
       "status": "ACTIVE",
       "delivery": "Active",
       "daily_budget": 35,
-      "spend": 421.03,
-      "impressions": 45393,
-      "reach": 20521,
-      "clicks": 444,
-      "cpc": 0.948266,
-      "ctr": 0.978124,
+      "spend": 450.31,
+      "impressions": 47729,
+      "reach": 21478,
+      "clicks": 463,
+      "cpc": 0.972592,
+      "ctr": 0.97006,
       "results": 33,
       "result_label": "Leads",
-      "cost_per_result": 12.758484848484848
+      "cost_per_result": 13.645757575757576
     },
     {
       "name": "Deep Condenser Clean $125",
@@ -37,15 +37,15 @@
       "status": "ACTIVE",
       "delivery": "Active",
       "daily_budget": 15,
-      "spend": 487.62,
-      "impressions": 208184,
-      "reach": 74520,
-      "clicks": 1868,
-      "cpc": 0.261039,
-      "ctr": 0.897283,
-      "results": 2008,
+      "spend": 498.65,
+      "impressions": 210182,
+      "reach": 75522,
+      "clicks": 1920,
+      "cpc": 0.259714,
+      "ctr": 0.913494,
+      "results": 2058,
       "result_label": "Link clicks",
-      "cost_per_result": 0.2428386454183267
+      "cost_per_result": 0.2422983479105928
     }
   ],
   "daily": [
@@ -174,6 +174,12 @@
       "spend": 43.32,
       "clicks": 97,
       "impressions": 6353
+    },
+    {
+      "date": "2026-07-13",
+      "spend": 40.31,
+      "clicks": 71,
+      "impressions": 4334
     }
   ]
 }
