@@ -147,6 +147,13 @@
     </div>
     <div class="status">
       <span class="live"><span class="dot"></span> Live</span>
+      <div class="stat-chip"><span class="k">Date range</span>
+        <select id="rangeSel" class="v mono" style="background:var(--panel-2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:3px 7px;font:inherit;font-variant-numeric:tabular-nums;cursor:pointer;outline:none">
+          <option value="7">Last 7 days</option>
+          <option value="14">Last 14 days</option>
+          <option value="30" selected>Last 30 days</option>
+        </select>
+      </div>
       <div class="stat-chip"><span class="k">Window</span><span class="v mono" id="window">—</span></div>
       <div class="stat-chip"><span class="k">Updated</span><span class="v mono" id="updated">—</span></div>
       <div class="stat-chip"><span class="k">Auto-refresh</span><span class="v mono">Hourly</span></div>
@@ -348,34 +355,58 @@ function campaigns(list){
   }).join('');
 }
 
+let DATA = null, TICKS = false;
+
+// Pick the data for the selected range. New format: d.ranges[key]. Legacy: top-level.
+function pickRange(d, key){
+  if(d.ranges && d.ranges[key]) return d.ranges[key];
+  return { window: d.window, summary: d.summary || {}, campaigns: d.campaigns || [] };
+}
+
+function render(){
+  const d = DATA; if(!d) return;
+  const sel = document.getElementById('rangeSel');
+  const key = (sel && sel.value) || d.default_range || '30';
+  const R = pickRange(d, key);
+  const s = R.summary || {};
+
+  document.getElementById('window').textContent = R.window || '—';
+  document.getElementById('updated').textContent = timeAgo(d.updated);
+
+  if(!TICKS){ buildTicks(); TICKS = true; }
+  setGauge(+s.cpc||0);
+  document.getElementById('cpc').textContent = fmtUSD(s.cpc);
+
+  countUp(document.getElementById('spend'), +s.spend||0, fmtUSD);
+  countUp(document.getElementById('m_impr'), +s.impressions||0, fmtNum);
+  countUp(document.getElementById('m_reach'), +s.reach||0, fmtNum);
+
+  // pacing: spend vs. total daily budgets across active campaigns
+  const activeBudget = (R.campaigns||[]).filter(c=>(c.status||'').toUpperCase()==='ACTIVE')
+    .reduce((a,c)=>a+(+c.daily_budget||0),0) || 15;
+  document.getElementById('budget').textContent = fmtUSD(activeBudget)+'/day';
+  const todayShare = Math.min(1, (+s.spend % (activeBudget||15)) / (activeBudget||15));
+  requestAnimationFrame(()=>{ document.getElementById('pace').style.width = (40+todayShare*55).toFixed(0)+'%'; });
+
+  readouts(s);
+  // slice the daily trend to the selected window (daily always holds ~30 days)
+  const days = parseInt(key,10) || 30;
+  chart((d.daily||[]).slice(-days));
+  campaigns(R.campaigns);
+}
+
 async function load(){
   try{
     const r = await fetch('/ads/data.json?ts='+Date.now(), {cache:'no-store'});
     if(!r.ok) throw new Error('data.json '+r.status);
-    const d = await r.json();
-    const s = d.summary;
-
-    document.getElementById('window').textContent = d.window || '—';
-    document.getElementById('updated').textContent = timeAgo(d.updated);
-
-    buildTicks();
-    setGauge(+s.cpc||0);
-    document.getElementById('cpc').textContent = fmtUSD(s.cpc);
-
-    countUp(document.getElementById('spend'), +s.spend||0, fmtUSD);
-    countUp(document.getElementById('m_impr'), +s.impressions||0, fmtNum);
-    countUp(document.getElementById('m_reach'), +s.reach||0, fmtNum);
-
-    // pacing: spend vs. total daily budgets across active campaigns × days elapsed (rough)
-    const activeBudget = (d.campaigns||[]).filter(c=>(c.status||'').toUpperCase()==='ACTIVE')
-      .reduce((a,c)=>a+(+c.daily_budget||0),0) || 15;
-    document.getElementById('budget').textContent = fmtUSD(activeBudget)+'/day';
-    const todayShare = Math.min(1, (+s.spend % (activeBudget||15)) / (activeBudget||15));
-    requestAnimationFrame(()=>{ document.getElementById('pace').style.width = (40+todayShare*55).toFixed(0)+'%'; });
-
-    readouts(s);
-    chart(d.daily);
-    campaigns(d.campaigns);
+    DATA = await r.json();
+    const sel = document.getElementById('rangeSel');
+    if(sel && !sel.dataset.init){
+      sel.value = DATA.default_range || '30';
+      sel.addEventListener('change', render);
+      sel.dataset.init = '1';
+    }
+    render();
   }catch(e){
     document.getElementById('err').textContent = 'Could not load data — '+e.message;
     document.getElementById('cpc').textContent = '—';
