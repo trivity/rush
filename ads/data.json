@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-17T04:53:35Z",
+  "updated": "2026-07-17T07:10:03Z",
   "currency": "USD",
   "account_id": "870041577419265",
-  "window": "Jun 16 – Jul 15, 2026",
+  "window": "Jun 17 – Jul 16, 2026",
   "summary": {
-    "spend": 1081.32,
-    "impressions": 275989,
-    "reach": 102950,
-    "clicks": 2700,
-    "link_clicks": 2790,
-    "cpc": 0.400489,
-    "cpm": 3.917982,
-    "ctr": 0.9783,
-    "frequency": 2.680806
+    "spend": 1141.95,
+    "impressions": 283454,
+    "reach": 105154,
+    "clicks": 2826,
+    "link_clicks": 2914,
+    "cpc": 0.404087,
+    "cpm": 4.028696,
+    "ctr": 0.996987,
+    "frequency": 2.695608
   },
   "campaigns": [
     {
@@ -21,15 +21,15 @@
       "status": "ACTIVE",
       "delivery": "Active",
       "daily_budget": 35,
-      "spend": 540.76,
-      "impressions": 57097,
-      "reach": 24196,
-      "clicks": 548,
-      "cpc": 0.986788,
-      "ctr": 0.95977,
-      "results": 37,
+      "spend": 584.76,
+      "impressions": 61008,
+      "reach": 25268,
+      "clicks": 581,
+      "cpc": 1.006472,
+      "ctr": 0.952334,
+      "results": 38,
       "result_label": "Leads",
-      "cost_per_result": 14.615135135135136
+      "cost_per_result": 15.388421052631578
     },
     {
       "name": "Deep Condenser Clean $125",
@@ -37,15 +37,15 @@
       "status": "ACTIVE",
       "delivery": "Active",
       "daily_budget": 15,
-      "spend": 540.56,
-      "impressions": 218892,
-      "reach": 80062,
-      "clicks": 2152,
-      "cpc": 0.25119,
-      "ctr": 0.983133,
-      "results": 2289,
+      "spend": 557.19,
+      "impressions": 222446,
+      "reach": 81695,
+      "clicks": 2245,
+      "cpc": 0.248192,
+      "ctr": 1.009234,
+      "results": 2380,
       "result_label": "Link clicks",
-      "cost_per_result": 0.23615552643075577
+      "cost_per_result": 0.2341134453781513
     }
   ],
   "daily": [
@@ -192,6 +192,12 @@
       "spend": 63.12,
       "clicks": 156,
       "impressions": 8773
+    },
+    {
+      "date": "2026-07-16",
+      "spend": 60.63,
+      "clicks": 126,
+      "impressions": 7465
     }
   ]
 }
