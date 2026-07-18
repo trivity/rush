@@ -1,21 +1,21 @@
 {
-  "updated": "2026-07-18T04:38:51Z",
+  "updated": "2026-07-18T06:52:59Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
   "ranges": {
     "7": {
-      "window": "Jul 10 – Jul 16, 2026",
+      "window": "Jul 11 – Jul 17, 2026",
       "summary": {
-        "spend": 233.3,
-        "impressions": 29879,
-        "reach": 21476,
-        "clicks": 514,
-        "link_clicks": 505,
-        "cpc": 0.453891,
-        "cpm": 7.80816,
-        "ctr": 1.720272,
-        "frequency": 1.391274
+        "spend": 298.27,
+        "impressions": 35894,
+        "reach": 24976,
+        "clicks": 650,
+        "link_clicks": 634,
+        "cpc": 0.458877,
+        "cpm": 8.309745,
+        "ctr": 1.810888,
+        "frequency": 1.43714
       },
       "campaigns": [
         {
@@ -24,15 +24,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 163.73,
-          "impressions": 15617,
-          "reach": 8968,
-          "clicks": 137,
-          "cpc": 1.195109,
-          "ctr": 0.877249,
-          "results": 5,
+          "spend": 213.41,
+          "impressions": 18705,
+          "reach": 10227,
+          "clicks": 188,
+          "cpc": 1.13516,
+          "ctr": 1.005079,
+          "results": 11,
           "result_label": "Leads",
-          "cost_per_result": 32.745999999999995
+          "cost_per_result": 19.400909090909092
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -40,30 +40,30 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 69.57,
-          "impressions": 14262,
-          "reach": 12790,
-          "clicks": 377,
-          "cpc": 0.184536,
-          "ctr": 2.643388,
-          "results": 372,
+          "spend": 84.86,
+          "impressions": 17189,
+          "reach": 15045,
+          "clicks": 462,
+          "cpc": 0.18368,
+          "ctr": 2.687765,
+          "results": 457,
           "result_label": "Link clicks",
-          "cost_per_result": 0.18701612903225803
+          "cost_per_result": 0.18568927789934353
         }
       ]
     },
     "14": {
-      "window": "Jul 3 – Jul 16, 2026",
+      "window": "Jul 4 – Jul 17, 2026",
       "summary": {
-        "spend": 725.75,
-        "impressions": 138241,
-        "reach": 55992,
-        "clicks": 1777,
-        "link_clicks": 1813,
-        "cpc": 0.408413,
-        "cpm": 5.24989,
-        "ctr": 1.285436,
-        "frequency": 2.468942
+        "spend": 676.11,
+        "impressions": 99907,
+        "reach": 50763,
+        "clicks": 1597,
+        "link_clicks": 1611,
+        "cpc": 0.423363,
+        "cpm": 6.767394,
+        "ctr": 1.598487,
+        "frequency": 1.968107
       },
       "campaigns": [
         {
@@ -72,15 +72,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 460.92,
-          "impressions": 51460,
-          "reach": 22447,
-          "clicks": 481,
-          "cpc": 0.958254,
-          "ctr": 0.934707,
-          "results": 32,
+          "spend": 454,
+          "impressions": 49104,
+          "reach": 22062,
+          "clicks": 477,
+          "cpc": 0.951782,
+          "ctr": 0.971408,
+          "results": 35,
           "result_label": "Leads",
-          "cost_per_result": 14.40375
+          "cost_per_result": 12.971428571428572
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -88,30 +88,30 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 264.83,
-          "impressions": 86781,
-          "reach": 34702,
-          "clicks": 1296,
-          "cpc": 0.204344,
-          "ctr": 1.493414,
-          "results": 1368,
+          "spend": 222.11,
+          "impressions": 50803,
+          "reach": 29506,
+          "clicks": 1120,
+          "cpc": 0.198313,
+          "ctr": 2.204594,
+          "results": 1166,
           "result_label": "Link clicks",
-          "cost_per_result": 0.1935891812865497
+          "cost_per_result": 0.19048885077186964
         }
       ]
     },
     "30": {
-      "window": "Jun 17 – Jul 16, 2026",
+      "window": "Jun 18 – Jul 17, 2026",
       "summary": {
-        "spend": 1141.95,
-        "impressions": 283456,
-        "reach": 105154,
-        "clicks": 2826,
-        "link_clicks": 2914,
-        "cpc": 0.404087,
-        "cpm": 4.028668,
-        "ctr": 0.99698,
-        "frequency": 2.695627
+        "spend": 1206.92,
+        "impressions": 289471,
+        "reach": 106238,
+        "clicks": 2962,
+        "link_clicks": 3043,
+        "cpc": 0.407468,
+        "cpm": 4.169399,
+        "ctr": 1.023246,
+        "frequency": 2.724741
       },
       "campaigns": [
         {
@@ -120,15 +120,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 584.76,
-          "impressions": 61010,
-          "reach": 25268,
-          "clicks": 581,
-          "cpc": 1.006472,
-          "ctr": 0.952303,
-          "results": 38,
+          "spend": 634.44,
+          "impressions": 64098,
+          "reach": 26242,
+          "clicks": 632,
+          "cpc": 1.003861,
+          "ctr": 0.98599,
+          "results": 44,
           "result_label": "Leads",
-          "cost_per_result": 15.388421052631578
+          "cost_per_result": 14.41909090909091
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -136,15 +136,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 557.19,
-          "impressions": 222446,
-          "reach": 81695,
-          "clicks": 2245,
-          "cpc": 0.248192,
-          "ctr": 1.009234,
-          "results": 2380,
+          "spend": 572.48,
+          "impressions": 225373,
+          "reach": 82729,
+          "clicks": 2330,
+          "cpc": 0.2457,
+          "ctr": 1.033842,
+          "results": 2465,
           "result_label": "Link clicks",
-          "cost_per_result": 0.2341134453781513
+          "cost_per_result": 0.23224340770791077
         }
       ]
     }
