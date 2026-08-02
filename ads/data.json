@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-02T01:47:02Z",
+  "updated": "2026-08-02T05:16:43Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
   "ranges": {
     "7": {
-      "window": " – ",
+      "window": "Jul 26 – Aug 1, 2026",
       "summary": {
-        "spend": 0,
-        "impressions": 0,
-        "reach": 0,
-        "clicks": 0,
-        "link_clicks": 0,
-        "cpc": 0,
-        "cpm": 0,
-        "ctr": 0,
-        "frequency": 0
+        "spend": 113.65,
+        "impressions": 12403,
+        "reach": 11223,
+        "clicks": 218,
+        "link_clicks": 195,
+        "cpc": 0.52133,
+        "cpm": 9.163106,
+        "ctr": 1.757639,
+        "frequency": 1.105141
       },
       "campaigns": [
         {
@@ -24,12 +24,12 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 0,
-          "impressions": 0,
-          "reach": 0,
-          "clicks": 0,
-          "cpc": 0,
-          "ctr": 0,
+          "spend": 86.33,
+          "impressions": 6362,
+          "reach": 5918,
+          "clicks": 65,
+          "cpc": 1.328154,
+          "ctr": 1.021691,
           "results": 0,
           "result_label": "Leads",
           "cost_per_result": 0
@@ -40,30 +40,30 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 0,
-          "impressions": 0,
-          "reach": 0,
-          "clicks": 0,
-          "cpc": 0,
-          "ctr": 0,
-          "results": 0,
+          "spend": 27.32,
+          "impressions": 6041,
+          "reach": 5280,
+          "clicks": 153,
+          "cpc": 0.178562,
+          "ctr": 2.532693,
+          "results": 151,
           "result_label": "Link clicks",
-          "cost_per_result": 0
+          "cost_per_result": 0.18092715231788079
         }
       ]
     },
     "14": {
-      "window": "Jul 18 – Jul 31, 2026",
+      "window": "Jul 19 – Aug 1, 2026",
       "summary": {
-        "spend": 292.35,
-        "impressions": 29538,
-        "reach": 21753,
-        "clicks": 597,
-        "link_clicks": 557,
-        "cpc": 0.489698,
-        "cpm": 9.89742,
-        "ctr": 2.021125,
-        "frequency": 1.357882
+        "spend": 348.95,
+        "impressions": 36212,
+        "reach": 28336,
+        "clicks": 703,
+        "link_clicks": 643,
+        "cpc": 0.496373,
+        "cpm": 9.636308,
+        "ctr": 1.941345,
+        "frequency": 1.27795
       },
       "campaigns": [
         {
@@ -72,15 +72,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 223.01,
-          "impressions": 15024,
-          "reach": 8416,
-          "clicks": 233,
-          "cpc": 0.957124,
-          "ctr": 1.550852,
-          "results": 23,
+          "spend": 266.98,
+          "impressions": 18692,
+          "reach": 13219,
+          "clicks": 261,
+          "cpc": 1.022912,
+          "ctr": 1.396319,
+          "results": 21,
           "result_label": "Leads",
-          "cost_per_result": 9.69608695652174
+          "cost_per_result": 12.713333333333335
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -88,30 +88,30 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 69.34,
-          "impressions": 14514,
-          "reach": 13370,
-          "clicks": 364,
-          "cpc": 0.190495,
-          "ctr": 2.507923,
-          "results": 360,
+          "spend": 81.97,
+          "impressions": 17520,
+          "reach": 15143,
+          "clicks": 442,
+          "cpc": 0.185452,
+          "ctr": 2.522831,
+          "results": 436,
           "result_label": "Link clicks",
-          "cost_per_result": 0.19261111111111112
+          "cost_per_result": 0.1880045871559633
         }
       ]
     },
     "30": {
-      "window": "Jul 2 – Jul 31, 2026",
+      "window": "Jul 3 – Aug 1, 2026",
       "summary": {
-        "spend": 1151.59,
-        "impressions": 219317,
-        "reach": 79406,
-        "clicks": 2697,
-        "link_clicks": 2705,
-        "cpc": 0.426989,
-        "cpm": 5.250801,
-        "ctr": 1.229727,
-        "frequency": 2.76197
+        "spend": 1196.76,
+        "impressions": 186201,
+        "reach": 80414,
+        "clicks": 2728,
+        "link_clicks": 2694,
+        "cpc": 0.438695,
+        "cpm": 6.427248,
+        "ctr": 1.465083,
+        "frequency": 2.31553
       },
       "campaigns": [
         {
@@ -120,15 +120,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 770.89,
-          "impressions": 72448,
-          "reach": 28633,
-          "clicks": 802,
-          "cpc": 0.961209,
-          "ctr": 1.107001,
-          "results": 62,
+          "spend": 819.98,
+          "impressions": 75938,
+          "reach": 33543,
+          "clicks": 830,
+          "cpc": 0.987928,
+          "ctr": 1.092997,
+          "results": 61,
           "result_label": "Leads",
-          "cost_per_result": 12.433709677419355
+          "cost_per_result": 13.442295081967213
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -136,26 +136,20 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 380.7,
-          "impressions": 146869,
-          "reach": 51945,
-          "clicks": 1895,
-          "cpc": 0.200897,
-          "ctr": 1.290265,
-          "results": 1985,
+          "spend": 376.78,
+          "impressions": 110263,
+          "reach": 47295,
+          "clicks": 1898,
+          "cpc": 0.198514,
+          "ctr": 1.721339,
+          "results": 1964,
           "result_label": "Link clicks",
-          "cost_per_result": 0.19178841309823677
+          "cost_per_result": 0.19184317718940935
         }
       ]
     }
   },
   "daily": [
-    {
-      "date": "2026-07-02",
-      "spend": 68.48,
-      "clicks": 187,
-      "impressions": 45519
-    },
     {
       "date": "2026-07-03",
       "spend": 114.61,
@@ -257,6 +251,12 @@
       "spend": 23.43,
       "clicks": 45,
       "impressions": 2162
+    },
+    {
+      "date": "2026-08-01",
+      "spend": 113.65,
+      "clicks": 218,
+      "impressions": 12403
     }
   ]
 }
