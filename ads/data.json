@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T17:52:48Z",
+  "updated": "2026-08-02T18:54:00Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
@@ -7,15 +7,15 @@
     "7": {
       "window": "Jul 26 – Aug 1, 2026",
       "summary": {
-        "spend": 114.09,
-        "impressions": 12424,
+        "spend": 114.19,
+        "impressions": 12425,
         "reach": 11265,
         "clicks": 218,
         "link_clicks": 195,
-        "cpc": 0.523349,
-        "cpm": 9.183033,
-        "ctr": 1.754668,
-        "frequency": 1.102885
+        "cpc": 0.523807,
+        "cpm": 9.190342,
+        "ctr": 1.754527,
+        "frequency": 1.102974
       },
       "campaigns": [
         {
@@ -24,12 +24,12 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 86.76,
-          "impressions": 6382,
+          "spend": 86.86,
+          "impressions": 6383,
           "reach": 5964,
           "clicks": 65,
-          "cpc": 1.334769,
-          "ctr": 1.01849,
+          "cpc": 1.336308,
+          "ctr": 1.01833,
           "results": 0,
           "result_label": "Leads",
           "cost_per_result": 0
@@ -55,15 +55,15 @@
     "14": {
       "window": "Jul 19 – Aug 1, 2026",
       "summary": {
-        "spend": 349.39,
-        "impressions": 36233,
+        "spend": 349.49,
+        "impressions": 36234,
         "reach": 28352,
         "clicks": 703,
         "link_clicks": 643,
-        "cpc": 0.496999,
-        "cpm": 9.642867,
-        "ctr": 1.94022,
-        "frequency": 1.27797
+        "cpc": 0.497141,
+        "cpm": 9.645361,
+        "ctr": 1.940167,
+        "frequency": 1.278005
       },
       "campaigns": [
         {
@@ -72,15 +72,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 267.41,
-          "impressions": 18712,
+          "spend": 267.51,
+          "impressions": 18713,
           "reach": 13229,
           "clicks": 261,
-          "cpc": 1.024559,
-          "ctr": 1.394827,
+          "cpc": 1.024943,
+          "ctr": 1.394752,
           "results": 21,
           "result_label": "Leads",
-          "cost_per_result": 12.733809523809525
+          "cost_per_result": 12.738571428571428
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -103,15 +103,15 @@
     "30": {
       "window": "Jul 3 – Aug 1, 2026",
       "summary": {
-        "spend": 1197.2,
-        "impressions": 186222,
+        "spend": 1197.3,
+        "impressions": 186223,
         "reach": 80473,
         "clicks": 2728,
         "link_clicks": 2694,
-        "cpc": 0.438856,
-        "cpm": 6.428886,
-        "ctr": 1.464918,
-        "frequency": 2.314093
+        "cpc": 0.438893,
+        "cpm": 6.429388,
+        "ctr": 1.46491,
+        "frequency": 2.314105
       },
       "campaigns": [
         {
@@ -120,15 +120,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 820.41,
-          "impressions": 75958,
+          "spend": 820.51,
+          "impressions": 75959,
           "reach": 33553,
           "clicks": 830,
-          "cpc": 0.988446,
-          "ctr": 1.092709,
+          "cpc": 0.988566,
+          "ctr": 1.092695,
           "results": 61,
           "result_label": "Leads",
-          "cost_per_result": 13.449344262295082
+          "cost_per_result": 13.450983606557378
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -254,9 +254,9 @@
     },
     {
       "date": "2026-08-01",
-      "spend": 114.09,
+      "spend": 114.19,
       "clicks": 218,
-      "impressions": 12424
+      "impressions": 12425
     }
   ]
 }
