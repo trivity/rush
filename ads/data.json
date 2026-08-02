@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T15:52:31Z",
+  "updated": "2026-08-02T16:46:02Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
@@ -26,7 +26,7 @@
           "daily_budget": 50,
           "spend": 86.76,
           "impressions": 6382,
-          "reach": 5961,
+          "reach": 5964,
           "clicks": 65,
           "cpc": 1.334769,
           "ctr": 1.01849,
