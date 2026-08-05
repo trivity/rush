@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T12:46:51Z",
+  "updated": "2026-08-05T15:07:21Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
@@ -7,15 +7,15 @@
     "7": {
       "window": "Jul 29 – Aug 4, 2026",
       "summary": {
-        "spend": 312.34,
-        "impressions": 32122,
-        "reach": 24366,
+        "spend": 312.38,
+        "impressions": 32127,
+        "reach": 24403,
         "clicks": 715,
         "link_clicks": 658,
-        "cpc": 0.436839,
-        "cpm": 9.723554,
-        "ctr": 2.225889,
-        "frequency": 1.318312
+        "cpc": 0.436895,
+        "cpm": 9.723286,
+        "ctr": 2.225542,
+        "frequency": 1.316518
       },
       "campaigns": [
         {
@@ -24,15 +24,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 237.74,
-          "impressions": 17098,
-          "reach": 11690,
+          "spend": 237.78,
+          "impressions": 17103,
+          "reach": 11710,
           "clicks": 263,
-          "cpc": 0.903954,
-          "ctr": 1.538192,
+          "cpc": 0.904106,
+          "ctr": 1.537742,
           "results": 19,
           "result_label": "Leads",
-          "cost_per_result": 12.512631578947369
+          "cost_per_result": 12.514736842105263
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -55,15 +55,15 @@
     "14": {
       "window": "Jul 22 – Aug 4, 2026",
       "summary": {
-        "spend": 335.77,
-        "impressions": 34284,
-        "reach": 26067,
+        "spend": 335.81,
+        "impressions": 34289,
+        "reach": 26109,
         "clicks": 760,
         "link_clicks": 700,
-        "cpc": 0.441803,
-        "cpm": 9.793781,
-        "ctr": 2.216778,
-        "frequency": 1.315226
+        "cpc": 0.441855,
+        "cpm": 9.79352,
+        "ctr": 2.216454,
+        "frequency": 1.313302
       },
       "campaigns": [
         {
@@ -72,15 +72,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 255.2,
-          "impressions": 17977,
-          "reach": 12071,
+          "spend": 255.24,
+          "impressions": 17982,
+          "reach": 12092,
           "clicks": 278,
-          "cpc": 0.917986,
-          "ctr": 1.54642,
+          "cpc": 0.91813,
+          "ctr": 1.54599,
           "results": 19,
           "result_label": "Leads",
-          "cost_per_result": 13.43157894736842
+          "cost_per_result": 13.433684210526316
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -103,15 +103,15 @@
     "30": {
       "window": "Jul 6 – Aug 4, 2026",
       "summary": {
-        "spend": 1100.97,
-        "impressions": 127565,
+        "spend": 1101.01,
+        "impressions": 127570,
         "reach": 68172,
         "clicks": 2454,
         "link_clicks": 2328,
-        "cpc": 0.448643,
-        "cpm": 8.630659,
-        "ctr": 1.923725,
-        "frequency": 1.871223
+        "cpc": 0.448659,
+        "cpm": 8.630634,
+        "ctr": 1.92365,
+        "frequency": 1.871296
       },
       "campaigns": [
         {
@@ -120,15 +120,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 816.66,
-          "impressions": 68706,
+          "spend": 816.7,
+          "impressions": 68711,
           "reach": 31670,
           "clicks": 865,
-          "cpc": 0.944116,
-          "ctr": 1.258988,
+          "cpc": 0.944162,
+          "ctr": 1.258896,
           "results": 72,
           "result_label": "Leads",
-          "cost_per_result": 11.3425
+          "cost_per_result": 11.343055555555557
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -254,9 +254,9 @@
     },
     {
       "date": "2026-08-04",
-      "spend": 60.1,
+      "spend": 60.14,
       "clicks": 160,
-      "impressions": 5852
+      "impressions": 5857
     }
   ]
 }
