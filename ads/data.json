@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-10T03:07:22Z",
+  "updated": "2026-08-10T05:15:42Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
   "ranges": {
     "7": {
-      "window": "Aug 2 – Aug 8, 2026",
+      "window": "Aug 3 – Aug 9, 2026",
       "summary": {
-        "spend": 446.19,
-        "impressions": 44481,
-        "reach": 29357,
-        "clicks": 1122,
-        "link_clicks": 1051,
-        "cpc": 0.397674,
-        "cpm": 10.031024,
-        "ctr": 2.522425,
-        "frequency": 1.515175
+        "spend": 368.86,
+        "impressions": 37240,
+        "reach": 25367,
+        "clicks": 945,
+        "link_clicks": 891,
+        "cpc": 0.390328,
+        "cpm": 9.904941,
+        "ctr": 2.537594,
+        "frequency": 1.468049
       },
       "campaigns": [
         {
@@ -24,15 +24,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 340.46,
-          "impressions": 24064,
-          "reach": 11646,
-          "clicks": 425,
-          "cpc": 0.801082,
-          "ctr": 1.766124,
-          "results": 36,
+          "spend": 278.34,
+          "impressions": 19690,
+          "reach": 9998,
+          "clicks": 344,
+          "cpc": 0.809128,
+          "ctr": 1.74708,
+          "results": 27,
           "result_label": "Leads",
-          "cost_per_result": 9.45722222222222
+          "cost_per_result": 10.308888888888887
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -40,20 +40,20 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 105.73,
-          "impressions": 20417,
-          "reach": 18025,
-          "clicks": 697,
-          "cpc": 0.151693,
-          "ctr": 3.413822,
-          "results": 691,
+          "spend": 90.52,
+          "impressions": 17550,
+          "reach": 15681,
+          "clicks": 601,
+          "cpc": 0.150616,
+          "ctr": 3.424501,
+          "results": 595,
           "result_label": "Link clicks",
-          "cost_per_result": 0.15301013024602025
+          "cost_per_result": 0.1521344537815126
         }
       ]
     },
     "14": {
-      "window": "Jul 26 – Aug 8, 2026",
+      "window": "Jul 27 – Aug 9, 2026",
       "summary": {
         "spend": 560.41,
         "impressions": 56908,
@@ -101,7 +101,7 @@
       ]
     },
     "30": {
-      "window": "Jul 10 – Aug 8, 2026",
+      "window": "Jul 11 – Aug 9, 2026",
       "summary": {
         "spend": 1151.07,
         "impressions": 122344,
