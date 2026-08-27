@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-27T02:23:36Z",
+  "updated": "2026-08-27T13:18:33Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
   "ranges": {
     "7": {
-      "window": "Aug 19 – Aug 25, 2026",
+      "window": " – ",
       "summary": {
-        "spend": 30.48,
-        "impressions": 3455,
-        "reach": 2759,
-        "clicks": 70,
-        "link_clicks": 67,
-        "cpc": 0.435429,
-        "cpm": 8.821997,
-        "ctr": 2.026049,
-        "frequency": 1.252265
+        "spend": 0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "link_clicks": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "frequency": 0
       },
       "campaigns": [
         {
@@ -24,15 +24,15 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 50,
-          "spend": 23.62,
-          "impressions": 1972,
-          "reach": 1402,
-          "clicks": 22,
-          "cpc": 1.073636,
-          "ctr": 1.115619,
-          "results": 2,
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpc": 0,
+          "ctr": 0,
+          "results": 0,
           "result_label": "Leads",
-          "cost_per_result": 11.81
+          "cost_per_result": 0
         },
         {
           "name": "Deep Condenser Clean $125",
@@ -40,20 +40,20 @@
           "status": "ACTIVE",
           "delivery": "Active",
           "daily_budget": 16,
-          "spend": 6.86,
-          "impressions": 1483,
-          "reach": 1408,
-          "clicks": 48,
-          "cpc": 0.142917,
-          "ctr": 3.236682,
-          "results": 48,
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpc": 0,
+          "ctr": 0,
+          "results": 0,
           "result_label": "Link clicks",
-          "cost_per_result": 0.14291666666666666
+          "cost_per_result": 0
         }
       ]
     },
     "14": {
-      "window": "Aug 12 – Aug 25, 2026",
+      "window": "Aug 13 – Aug 26, 2026",
       "summary": {
         "spend": 444.66,
         "impressions": 61928,
@@ -101,7 +101,7 @@
       ]
     },
     "30": {
-      "window": "Jul 27 – Aug 25, 2026",
+      "window": "Jul 28 – Aug 26, 2026",
       "summary": {
         "spend": 1005.07,
         "impressions": 118836,
