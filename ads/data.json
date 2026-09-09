@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T00:50:40Z",
+  "updated": "2026-09-09T05:31:45Z",
   "currency": "USD",
   "account_id": "870041577419265",
   "default_range": "30",
@@ -101,7 +101,7 @@
       ]
     },
     "30": {
-      "window": "Aug 9 – Sep 7, 2026",
+      "window": "Aug 10 – Sep 8, 2026",
       "summary": {
         "spend": 444.66,
         "impressions": 61928,
